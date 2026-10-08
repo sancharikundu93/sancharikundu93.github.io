@@ -1,13 +1,13 @@
 /* Shared styles for every page of the site */
 :root {
-  --primary: #4a3fa6;
-  --primary-dark: #2b2470;
-  --primary-light: #7f78d6;
-  --tint: #efeefb;
+  --primary: #143d72;
+  --primary-dark: #0a2445;
+  --primary-light: #4479b8;
+  --tint: #ebf2f9;
   --text: #1c1c1c;
   --muted: #5f5f6b;
   --bg: #ffffff;
-  --border: #e1dff3;
+  --border: #d6e2ef;
   --serif: "Roboto Serif", Georgia, serif;
   --sans: "Roboto", system-ui, -apple-system, sans-serif;
 }
@@ -172,16 +172,16 @@ footer strong { color: var(--text); }
 }
 .eyebrow {
   text-transform: uppercase; letter-spacing: .14em; font-size: 14px; font-weight: 500;
-  color: #d8d4ff; margin: 0 0 12px;
+  color: #cde0f5; margin: 0 0 12px;
 }
 .hero h1 {
   font-family: var(--serif); font-weight: 600; margin: 0 0 20px;
   font-size: clamp(40px, 7vw, 72px); line-height: 1.05;
 }
-.hero-statement { font-size: 19px; line-height: 1.7; max-width: 640px; margin: 0 0 24px; color: #eeedff; }
+.hero-statement { font-size: 19px; line-height: 1.7; max-width: 640px; margin: 0 0 24px; color: #e8f1fb; }
 .motto {
   font-family: var(--serif); font-style: italic; font-size: 21px; margin: 0 0 28px;
-  padding-left: 16px; border-left: 3px solid #d8d4ff;
+  padding-left: 16px; border-left: 3px solid #cde0f5;
 }
 .icons { display: flex; gap: 12px; margin-bottom: 28px; }
 .icons a {
@@ -215,7 +215,7 @@ footer strong { color: var(--text); }
   background: var(--primary); color: #fff; border-radius: 12px; padding: 32px 24px; text-align: center;
 }
 .stats .num { display: block; font-family: var(--serif); font-size: 42px; font-weight: 600; line-height: 1.1; }
-.stats .label { font-size: 15px; color: #e2e0fb; }
+.stats .label { font-size: 15px; color: #d5e4f5; }
 .stats small { font-size: 13px; opacity: .85; }
 
 @media (max-width: 760px) {
