@@ -10,13 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Roboto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
   <header class="topbar">
     <div class="inner">
       <a class="site-name" href="index.html">Sanchari Kundu</a>
       <nav aria-label="Main">
         <ul class="menu">
-        <li><a href="index.html" aria-current="page">Biography</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="cv.html">Curriculum vitae</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="talks.html">Talks</a></li>
@@ -27,65 +28,34 @@
     </div>
   </header>
 
-  <div class="banner"><h1>Biography</h1></div>
-
-  <main>
-    <section class="bio-intro">
-      <img src="photo.jpg" alt="Portrait of Sanchari Kundu">
-      <div>
-        <p class="bio-name">Sanchari Kundu</p>
-        <p class="bio-title">Ph.D. Candidate · Virginia Tech</p>
-        <p class="tagline">Reading how plants respond to stress, one cell type at a time.</p>
-        <div class="social">
-          <a href="https://scholar.google.com/citations?user=5JRJU6gAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zm-6.8 9.6v4.1L12 21l6.8-4.3v-4.1L12 16.4l-6.8-3.8z"/></svg>Google Scholar</a>
-          <a href="https://github.com/sancharikundu93" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>GitHub</a>
-          <a href="mailto:sancharikundu@vt.edu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2V5zm2 2v.5l8 5 8-5V7H4zm16 2.8-8 5-8-5V17h16V9.8z"/></svg>Email</a>
-          <a href="cv.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5zM8 12h10v2H8v-2zm0 4h10v2H8v-2z"/></svg>CV</a>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Plant Single-Cell Biologist &amp; Computational Genomics</p>
+        <h1>Sanchari Kundu</h1>
+        <p class="hero-statement">
+          I study how individual plant cells respond to environmental stress. Working at the interface of wet lab and
+          dry lab, I combine single-nucleus and spatial transcriptomics, imaging and cross-species annotation to link
+          gene function to stress resilience, with the goal of building more resilient food crops.
+        </p>
+        <p class="motto">Reading how plants respond to stress, one cell type at a time.</p>
+        <div class="icons">
+          <a href="https://scholar.google.com/citations?user=5JRJU6gAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zm-6.8 9.6v4.1L12 21l6.8-4.3v-4.1L12 16.4l-6.8-3.8z"/></svg></a>
+          <a href="https://github.com/sancharikundu93" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a>
+          <a href="mailto:sancharikundu@vt.edu" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2V5zm2 2v.5l8 5 8-5V7H4zm16 2.8-8 5-8-5V17h16V9.8z"/></svg></a>
+          <a href="cv.html" aria-label="CV" title="CV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5zM8 12h10v2H8v-2zm0 4h10v2H8v-2z"/></svg></a>
+        </div>
+        <div class="hero-actions">
+          <a class="hero-cta" href="cv.pdf" download="Sanchari_Kundu_CV.pdf">Download CV ↓</a>
+          <a class="hero-cta ghost" href="about.html">About me →</a>
         </div>
       </div>
-    </section>
-
-    <div class="statement">
-      As a plant single-cell biologist, I develop single-cell and spatial transcriptomic approaches to understand
-      how individual cell types respond to environmental stress. Working at the interface of wet lab and dry lab,
-      I combine snRNA-seq, spatial transcriptomics, imaging and cross-species annotation to link gene function to
-      stress resilience. My long-term goal is to apply omics approaches to food crops and medicinal plants to
-      support food security and human health.
+      <img class="hero-photo" src="photo.jpg" alt="Portrait of Sanchari Kundu">
     </div>
-
-    <div class="bio-text">
-      <p>
-        Sanchari Kundu is a Ph.D. candidate in Crop and Soil Environmental Sciences in the School of Plant and
-        Environmental Sciences at Virginia Tech. Her research dissects cell-type-specific transcriptional responses
-        to abiotic stress. Using single-nucleus RNA-seq, she studies how individual cell types in pennycress
-        (<i>Thlaspi arvense</i>) roots remodel under salt stress, including alternative splicing and polyadenylation.
-        She also develops computational methods for non-model plants: refining 3′ UTR annotation to improve
-        single-cell quantification across ten species, expanding the Orthogroup Marker Gene (OMG) resource for
-        cross-species cell-type annotation, and building a pathway-enrichment-based approach to annotate
-        Stereo-seq spatial transcriptomics data in pepper fruit.
-      </p>
-      <p>
-        Sanchari's path into plant science began in India. She received her B.Sc. in Microbiology from West Bengal
-        University of Technology, graduating with a silver medal, and her M.Sc. in Agricultural Biotechnology from
-        Ramakrishna Mission Vivekananda University, where she carried out an in-silico study of retrotransposons in
-        bamboo. She then moved to the United States and earned an M.S. in Integrated and Organismal Biology at the
-        University of New Hampshire, where she studied how the polyamines putrescine and spermidine help hybrid
-        poplar tolerate salt and cadmium stress.
-      </p>
-      <p>
-        She joined Virginia Tech in 2023, moving from whole-plant physiology to single-cell and spatial genomics.
-        She has presented her work at the Gordon Research Conference on Single Cell Approaches in Plant Biology, the
-        Plant and Animal Genome Conference and the Salk Institute's Discover Symposium, and has helped lead the
-        Summer Single Cell Workshop at Virginia Tech. She is currently seeking a postdoctoral position in
-        computational plant genomics.
-      </p>
-    </div>
-  </main>
+  </section>
 
   <footer>
-    <p><a href="mailto:sancharikundu@vt.edu">sancharikundu@vt.edu</a></p>
-    <p><strong>School of Plant and Environmental Sciences, Virginia Tech</strong></p>
-    <p>Blacksburg, VA 24061</p>
+    <p>© 2026 Sanchari Kundu · <a href="mailto:sancharikundu@vt.edu">sancharikundu@vt.edu</a></p>
   </footer>
 </body>
 </html>
