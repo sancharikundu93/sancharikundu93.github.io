@@ -10,25 +10,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Roboto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="home">
+<body class="onepage">
   <header class="topbar">
     <div class="inner">
-      <a class="site-name" href="index.html">Sanchari Kundu</a>
+      <a class="site-name" href="#home">Sanchari Kundu</a>
       <nav aria-label="Main">
         <ul class="menu">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="cv.html">Curriculum vitae</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="talks.html">Talks</a></li>
-        <li><a href="teaching.html">Teaching &amp; Mentoring</a></li>
-        <li><a href="photos.html">Photos</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#photos">Photos</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero-inner">
       <div class="hero-text">
         <p class="eyebrow">Plant Single-Cell Biologist &amp; Computational Genomics</p>
@@ -43,19 +43,311 @@
           <a href="https://scholar.google.com/citations?user=5JRJU6gAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zm-6.8 9.6v4.1L12 21l6.8-4.3v-4.1L12 16.4l-6.8-3.8z"/></svg></a>
           <a href="https://github.com/sancharikundu93" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a>
           <a href="mailto:sancharikundu@vt.edu" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2V5zm2 2v.5l8 5 8-5V7H4zm16 2.8-8 5-8-5V17h16V9.8z"/></svg></a>
-          <a href="cv.html" aria-label="CV" title="CV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5zM8 12h10v2H8v-2zm0 4h10v2H8v-2z"/></svg></a>
+          <a href="#cv" aria-label="CV" title="CV"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5zM8 12h10v2H8v-2zm0 4h10v2H8v-2z"/></svg></a>
         </div>
         <div class="hero-actions">
           <a class="hero-cta" href="cv.pdf" download="Sanchari_Kundu_CV.pdf">Download CV ↓</a>
-          <a class="hero-cta ghost" href="about.html">About me →</a>
+          <a class="hero-cta ghost" href="#about">About me →</a>
         </div>
       </div>
       <img class="hero-photo" src="photo.jpg" alt="Portrait of Sanchari Kundu">
     </div>
   </section>
 
+  <section class="page-section" id="about">
+    <div class="section-inner">
+      <h2 class="section-title">About</h2>
+      <section class="bio-intro">
+        <img src="photo.jpg" alt="Portrait of Sanchari Kundu">
+        <div class="bio-text">
+          <p class="bio-name">Sanchari Kundu</p>
+          <p class="bio-title">Ph.D. Candidate · Virginia Tech</p>
+          <p>
+            Raised in India, I earned my B.Sc. in Microbiology from West Bengal University of Technology, graduating
+            with a silver medal, and my M.Sc. in Agricultural Biotechnology from Ramakrishna Mission Vivekananda
+            University, where I carried out an in-silico study of retrotransposons in bamboo. I then moved to the
+            United States for an M.S. in Integrated and Organismal Biology at the University of New Hampshire, where I
+            studied how the polyamines putrescine and spermidine help hybrid poplar tolerate salt and cadmium stress.
+          </p>
+        </div>
+      </section>
+
+      <div class="bio-text" style="margin-top: 32px">
+        <p>
+          In 2023 I joined the School of Plant and Environmental Sciences at Virginia Tech as a Ph.D. student in Crop
+          and Soil Environmental Sciences, moving from whole-plant physiology to single-cell and spatial genomics. Using
+          single-nucleus RNA-seq, I study how individual cell types in pennycress (<i>Thlaspi arvense</i>) roots remodel
+          under salt stress, including alternative splicing and polyadenylation. I also develop computational methods
+          for non-model plants: refining 3′ UTR annotation to improve single-cell quantification across ten species,
+          expanding the Orthogroup Marker Gene (OMG) resource for cross-species cell-type annotation, and building a
+          pathway-enrichment-based approach to annotate Stereo-seq spatial transcriptomics data in pepper fruit.
+        </p>
+      </div>
+
+      <div class="social" style="margin-top: 8px">
+        <a href="#cv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5zM8 12h10v2H8v-2zm0 4h10v2H8v-2z"/></svg>My CV</a>
+      </div>
+
+      <h3 class="sub-h">Education</h3>
+      <ol class="timeline">
+        <li>
+          <span class="t-years">2023 – present</span>
+          <strong>Ph.D. in Crop and Soil Environmental Sciences</strong>
+          <span class="t-place">Virginia Tech, Blacksburg, VA</span>
+          <span class="t-place">Doctoral Committee Chair: Dr. Song Li</span>
+        </li>
+        <li>
+          <span class="t-years">2018 – 2023</span>
+          <strong>M.S. in Integrated and Organismal Biology</strong>
+          <span class="t-place">University of New Hampshire, Durham, NH</span>
+        </li>
+        <li>
+          <span class="t-years">2016</span>
+          <strong>M.Sc. in Agricultural Biotechnology</strong>
+          <span class="t-place">Ramakrishna Mission Vivekananda University, India</span>
+        </li>
+        <li>
+          <span class="t-years">2014</span>
+          <strong>B.Sc. in Microbiology · Silver medal</strong>
+          <span class="t-place">West Bengal University of Technology, Kolkata, India</span>
+        </li>
+      </ol>
+
+      <div class="stats">
+        <div><span class="num">9</span><span class="label">Publications<br><small>6 published · 3 in prep</small></span></div>
+        <div><span class="num">20</span><span class="label">Talks &amp; posters</span></div>
+        <div><span class="num">14</span><span class="label">Honors &amp; awards</span></div>
+        <div><span class="num">10+</span><span class="label">Mentees</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section" id="cv">
+    <div class="section-inner">
+      <h2 class="section-title">Curriculum Vitae</h2>
+      <p class="cv-quote">“Every cell tells its own story of stress and survival; single-cell genomics lets us read it.”</p>
+
+      <div class="cv-download">
+        <a class="btn-solid" href="cv.pdf" download="Sanchari_Kundu_CV.pdf">Download CV (PDF) ↓</a>
+      </div>
+
+      <h3 class="sub-h">Research Experience</h3>
+      <div class="cv-list">
+        <div class="cv-row"><span class="cv-when">2023 – present</span><div><strong>Ph.D. Graduate Researcher</strong>, School of Plant and Environmental Sciences, Virginia Tech (Blacksburg, VA, USA).
+          <ul class="cv-bullets">
+            <li><strong>Cell-type-specific transcriptional responses to salt stress in pennycress roots</strong>: snRNA-seq under salinity resolving cell-type responses and alternative splicing / polyadenylation isoform diversity; bulk RNA-seq temporal deconvolution; confocal and brightfield root imaging; growth-chamber experiments.</li>
+            <li><strong>Refining 3′ UTR annotation</strong> to improve scRNA-seq quantification in ten non-model plants.</li>
+            <li><strong>Cross-species spatial annotation for pepper (Stereo-seq)</strong> using pathway-specific enrichment to identify cell types and tissue domains.</li>
+            <li><strong>OMG 2.0</strong>: scaling the Orthogroup Marker Gene annotation method and building a web resource with organ- and condition-specific marker features.</li>
+            <li><strong>Spatial maps from single-cell data</strong>: confocal imaging of Arabidopsis fluorescent marker lines to build a 2D root model and map scRNA-seq data.</li>
+          </ul>
+          <span class="cv-detail">Research keywords: single-nucleus RNA-seq, spatial transcriptomics, salt stress, cross-species annotation, pennycress (<i>Thlaspi arvense</i>), pepper (<i>Capsicum</i>), <i>Arabidopsis thaliana</i>.</span></div></div>
+        <div class="cv-row"><span class="cv-when">2018 – 2022</span><div><strong>Graduate Researcher</strong>, Department of Biological Sciences, University of New Hampshire (Durham, NH, USA).
+          <ul class="cv-bullets">
+            <li>Role of putrescine and spermidine in salt and cadmium tolerance in hybrid poplar (clone NM6): gas exchange (LI-COR 6400) and HPLC quantification of sugars, polyamines, phytochelatins and amino acids.</li>
+          </ul>
+          <span class="cv-detail">Research keywords: polyamines, abiotic stress, plant physiology, hybrid poplar (<i>Populus</i>).</span></div></div>
+      </div>
+
+      <h3 class="sub-h">Honors &amp; Awards</h3>
+      <div class="cv-list">
+        <div class="cv-row"><span class="cv-when">2026</span><div>Travel award to present at Mid-Atlantic ASPB</div></div>
+        <div class="cv-row"><span class="cv-when">2026</span><div>3rd prize, oral presentation, Graduate and Professional Student Senate Symposium, Virginia Tech</div></div>
+        <div class="cv-row"><span class="cv-when">2026</span><div>TPSC non-PI grant for research training</div></div>
+        <div class="cv-row"><span class="cv-when">2026</span><div>Travel grant, College of Agriculture, Virginia Tech, to present at PAG 33</div></div>
+        <div class="cv-row"><span class="cv-when">2025</span><div>1st prize, Shark Tank presentation, Introduction to AI in Agriculture</div></div>
+        <div class="cv-row"><span class="cv-when">2025</span><div>3rd prize, poster presentation, School of Plant and Environmental Sciences Symposium, Virginia Tech</div></div>
+        <div class="cv-row"><span class="cv-when">2025</span><div>Travel grant, GPSS Travel Grant Program, Virginia Tech, to present at the Gordon Research Conference</div></div>
+        <div class="cv-row"><span class="cv-when">2025</span><div>Travel grant, College of Agriculture, Virginia Tech, to present at the Gordon Research Conference</div></div>
+        <div class="cv-row"><span class="cv-when">2025</span><div>Honorarium for poster presentation, Fralin Open House, Virginia Tech</div></div>
+        <div class="cv-row"><span class="cv-when">2024</span><div>HHMI and Helmsley Charitable Trust funding for Frontiers and Techniques in Plant Science, Cold Spring Harbor Laboratory</div></div>
+        <div class="cv-row"><span class="cv-when">2022</span><div>Travel grant award, American Society of Plant Biologists</div></div>
+        <div class="cv-row"><span class="cv-when">2021</span><div>Honorarium, Junior Sciences and Humanities Symposium</div></div>
+        <div class="cv-row"><span class="cv-when">2015</span><div>Full funding for the second year of the M.Sc. program, India</div></div>
+        <div class="cv-row"><span class="cv-when">2014</span><div>Silver medal (2nd position), B.Sc., West Bengal University of Technology</div></div>
+      </div>
+
+      <h3 class="sub-h">Professional Training</h3>
+      <div class="cv-list">
+        <div class="cv-row"><span class="cv-when">2024</span><div><strong>Frontiers and Techniques in Plant Science</strong>, Cold Spring Harbor Laboratory (NY, USA).</div></div>
+        <div class="cv-row"><span class="cv-when">2023 – 2024</span><div>Conflict of Interest; NSF Responsible Conduct of Research; Graduate Honor System Panelist Training, Virginia Tech.</div></div>
+      </div>
+
+      <h3 class="sub-h">Professional Service</h3>
+      <div class="cv-list">
+        <div class="cv-row"><span class="cv-when">2024 – 2025</span><div>Leadership team, Summer Single Cell Workshop, Virginia Tech</div></div>
+        <div class="cv-row"><span class="cv-when">2024 – present</span><div>Panelist, Graduate Honor System, Virginia Tech (academic integrity cases)</div></div>
+        <div class="cv-row"><span class="cv-when">2025</span><div>Reviewer, TPSC Grant Proposals and Travel Fund Program, Virginia Tech</div></div>
+        <div class="cv-row"><span class="cv-when">2024</span><div>Manuscript reviewer (2 manuscripts), <i>Plants</i></div></div>
+        <div class="cv-row"><span class="cv-when">2020 – 2023</span><div>Judge, STEM research papers, Junior Sciences and Humanities Symposium</div></div>
+        <div class="cv-row"><span class="cv-when">2019</span><div>Poster judge, 31st COLSA Undergraduate Research Conference, University of New Hampshire</div></div>
+      </div>
+
+      <h3 class="sub-h">University Service &amp; Outreach</h3>
+      <ul class="cv-bullets">
+        <li>Orientation Leader for International Students, Office of International Students and Scholars (OISS), University of New Hampshire</li>
+        <li>Graduate Student Senate, University of New Hampshire</li>
+        <li>Career Mentor, Career and Internship Fair, University of New Hampshire</li>
+        <li>Earth Day Service, Buckthorn Blitz, Durham, NH</li>
+      </ul>
+
+      <h3 class="sub-h">Skills &amp; Expertise</h3>
+      <div class="cv-list">
+        <div class="cv-row"><span class="cv-when">Single-cell &amp; omics</span><div>scRNA-seq / snRNA-seq analysis (Seurat, Scanpy) and experimental design; spatial transcriptomics (Stereo-seq); cross-species annotation (OMG); isoform and polyadenylation analysis; 3′ UTR annotation refinement; bulk RNA-seq; image segmentation (PlantSeg, SAMPLS, RootPainter, CellPose, Rootscope)</div></div>
+        <div class="cv-row"><span class="cv-when">Computational</span><div>Linux / HPC, R (advanced), Python (proficient), reproducible workflows, Git/GitHub, data visualization</div></div>
+        <div class="cv-row"><span class="cv-when">Wet lab</span><div>RNA extraction (pennycress, sagebrush); plant tissue culture (poplar, rice, <i>Centella</i>); microbiology; plasmid isolation; confocal and DIC imaging; hyperspectral imaging; HPLC; LI-COR 6400 / 6800; SPAD meter</div></div>
+      </div>
+
+      <h3 class="sub-h">Professional Memberships</h3>
+      <ul class="cv-bullets">
+        <li>American Society of Plant Biologists (ASPB)</li>
+        <li>PlantGene</li>
+        <li>Phi Kappa Phi Honor Society</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section" id="publications">
+    <div class="section-inner">
+      <h2 class="section-title">Publications</h2>
+      <p>For a complete and up-to-date list, see my <a href="https://scholar.google.com/citations?user=5JRJU6gAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.</p>
+
+      <h3 class="sub-h">Peer-reviewed papers</h3>
+      <ol class="entries">
+        <li><strong>Kundu S</strong>, Gagne M, Weerasinghe M, Minocha S (2026). Exogenous putrescine promotes growth under salt stress in a hybrid poplar, clone NM6. <span class="venue">Frontiers in Plant Science</span>. <a href="https://doi.org/10.3389/fpls.2025.1641288" target="_blank" rel="noopener">doi.org/10.3389/fpls.2025.1641288</a> <span class="note">· first author</span></li>
+        <li>Haghani M, Chau TN, Alajoleen R, Chen C-Y, Dip SA, Gurung V, Hsu C-W, Kittivorawong C, <strong>Kundu S</strong>, Li X, Luo J, Salehin M, Simenc M, Yun J, Bargmann BOR, Li S (2026). Cross-species plant single-cell analysis: community challenges and shared solutions. <span class="venue">Journal of Experimental Botany</span>. <a href="https://doi.org/10.1093/jxb/erag218" target="_blank" rel="noopener">doi.org/10.1093/jxb/erag218</a></li>
+        <li>Chau TN, Timilsena PR, Bathala S, <strong>Kundu S</strong>, Bargmann BOR, Li S (2025). Orthologous marker groups reveal broad cell identity conservation across plant single-cell transcriptomes. <span class="venue">Nature Communications</span>. <a href="https://doi.org/10.1038/s41467-024-55755-0" target="_blank" rel="noopener">doi.org/10.1038/s41467-024-55755-0</a></li>
+        <li>Sivaramakrishnan U, <strong>Kundu S</strong>, Bargmann BOR, Li S (2024). SAMPLS: A prompt engineering approach using Segment-Anything-Model for plant science research. <span class="venue">International Symposium on Visual Computing</span>. <a href="https://doi.org/10.1007/978-3-031-77389-1_14" target="_blank" rel="noopener">doi.org/10.1007/978-3-031-77389-1_14</a> <span class="note">· co-first author</span></li>
+        <li>Miao L, Dhulipalla K, <strong>Kundu S</strong>, Zheng B, Li S, Kojima S (2024). Leveraging machine learning for predicting circadian transcription in mRNAs and lncRNAs. <span class="venue">IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</span>. <a href="https://doi.org/10.1109/BIBM62325.2024.10822684" target="_blank" rel="noopener">doi.org/10.1109/BIBM62325.2024.10822684</a></li>
+      </ol>
+
+      <h3 class="sub-h">Book chapters</h3>
+      <ol class="entries">
+        <li><strong>Kundu S</strong>, Chau TN, Maroof D, Li S (2025). Annotation of single cell clusters using marker genes within and across species. In <span class="venue">Guide to Plant Single-Cell Technology: Functional Genomics and Crop Improvement</span>. <a href="https://doi.org/10.1016/B978-0-443-23736-2.00015-0" target="_blank" rel="noopener">doi.org/10.1016/B978-0-443-23736-2.00015-0</a> <span class="note">· first author</span></li>
+      </ol>
+
+      <h3 class="sub-h">In preparation</h3>
+      <ol class="entries">
+        <li><strong>Kundu S</strong>, Gautam B, Sedbrook J, Bargmann BOR, Li S. Single-nucleus transcriptomics reveal cellular remodeling during salt stress in <i>Thlaspi arvense</i> roots. <span class="note">· first author</span></li>
+        <li>Chaudhury M, <strong>Kundu S</strong>, Li S. FloraAgent: Enhancing scRNA-seq quantification in plants through refined 3′ UTR annotation. <span class="note">· co-first author</span></li>
+        <li><strong>Kundu S</strong>, Li S. AI-enhanced data analysis in plant proteomics. Invited chapter in <span class="venue">Plant Proteomics</span> (Elsevier). <span class="note">· first author</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page-section" id="talks">
+    <div class="section-inner">
+      <h2 class="section-title">Talks</h2>
+      <h3 class="sub-h">Oral presentations</h3>
+      <ul class="entries">
+        <li><span class="year">2026</span> · <strong>3rd Annual Discover Symposium, Salk Institute for Biological Studies, CA</strong></li>
+        <li><span class="year">2026</span> · <strong>Mid-Atlantic ASPB, University of Maryland</strong></li>
+        <li><span class="year">2026</span> · <strong>Graduate and Professional Student Senate Symposium, Virginia Tech <span class="note">· 3rd prize</span></strong></li>
+        <li><span class="year">2026</span> · <strong>Bayer Workshop flash talk, Virginia Tech</strong></li>
+        <li><span class="year">2025</span> · <strong>Gordon Research Conference: Single Cell Approaches in Plant Biology, Portland, ME</strong></li>
+        <li><span class="year">2022</span> · <strong>IUFRO Eighth International Poplar Symposium, Serbia (selected)</strong></li>
+        <li><span class="year">2021</span> · <strong>3 Minute Thesis Competition, University of New Hampshire</strong></li>
+        <li><span class="year">2021</span> · <strong>Visions Board Party, OISS, University of New Hampshire (invited)</strong></li>
+        <li><span class="year">2020</span> · <strong>Department of Biological Sciences Seminar, University of New Hampshire</strong></li>
+      </ul>
+
+      <h3 class="sub-h">Posters</h3>
+      <ul class="entries">
+        <li><span class="year">2026</span> · <strong>Mid-Atlantic ASPB, University of Maryland</strong></li>
+        <li><span class="year">2026</span> · <strong>Translational Plant Sciences Symposium, Virginia Tech</strong></li>
+        <li><span class="year">2026</span> · <strong>Plant and Animal Genome Conference (PAG 33), San Diego</strong></li>
+        <li><span class="year">2025</span> · <strong>Gordon Research Conference: Single Cell Approaches in Plant Biology, Portland, ME</strong></li>
+        <li><span class="year">2025</span> · <strong>School of Plant and Environmental Sciences Symposium, Virginia Tech <span class="note">· 3rd prize</span></strong></li>
+        <li><span class="year">2025</span> · <strong>TPSC Symposium, Virginia Tech</strong></li>
+        <li><span class="year">2025</span> · <strong>Fralin Open House, Virginia Tech (invited)</strong></li>
+        <li><span class="year">2024</span> · <strong>Plant and Animal Genome Conference</strong></li>
+        <li><span class="year">2023</span> · <strong>SPES Symposium, Virginia Tech</strong></li>
+        <li><span class="year">2022</span> · <strong>American Society of Plant Biologists, Oregon</strong></li>
+        <li><span class="year">2016</span> · <strong>Frontiers in Biotechnology, St Xavier's College, India</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-section" id="teaching">
+    <div class="section-inner">
+      <h2 class="section-title">Teaching &amp; Mentoring</h2>
+      <h3 class="sub-h">Teaching</h3>
+      <ul class="entries">
+        <li><span class="year">Spring 2025</span> · <strong>Virginia Tech</strong><span class="sub">Applied Statistics for Plant and Environmental Sciences</span></li>
+        <li><span class="year">2018 – 2022</span> · <strong>University of New Hampshire</strong><span class="sub">Introduction to Botany; Introduction to Germs; Human Anatomy and Physiology</span></li>
+      </ul>
+
+      <h3 class="sub-h">Mentoring</h3>
+      <ul class="entries">
+        <li>Mentored three M.S. students in Computer Science building a deep-learning image-segmentation pipeline for automated root phenotyping from confocal images (YOLO, PlantSeg).</li>
+        <li>Supervised an undergraduate researcher studying tomato growth responses to fertilizer treatment using hyperspectral image analysis.</li>
+        <li>Mentored six students in India on cover letters, statements of purpose and CVs for Ph.D. applications to US universities.</li>
+        <li>Mentored high school students through Project SMART and the Science Research and Internship Program (SRIP).</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="page-section" id="photos">
+    <div class="section-inner">
+      <h2 class="section-title">Photos</h2>
+      <!-- To add a photo: put the image in the photos/ folder, then copy one <figure> block below
+           and change the file name and caption. Add class="wide" to a figure for group/panorama shots. -->
+      <div class="gallery">
+        <figure>
+          <a href="photos/salk_discover_talk_2026.jpg" target="_blank" rel="noopener"><img src="photos/salk_discover_talk_2026.jpg" alt="Sanchari Kundu giving a talk at the Salk Institute podium, with data slides projected on the screen" loading="lazy" style="object-position: 30% center"></a>
+          <figcaption><strong>3rd Annual Discover Symposium, Salk Institute for Biological Studies</strong> · La Jolla, CA · July 2026. Speaking on cell-type-specific transcriptional responses to salt stress in pennycress using single-nucleus transcriptomics.</figcaption>
+        </figure>
+        <figure class="tall">
+          <a href="photos/pag33_poster_2026.jpg" target="_blank" rel="noopener"><img src="photos/pag33_poster_2026.jpg" alt="Sanchari Kundu standing beside her poster on single-nucleus transcriptomics of salt stress in pennycress at PAG 33" loading="lazy"></a>
+          <figcaption><strong>Plant and Animal Genome Conference (PAG 33)</strong> · San Diego, CA · January 2026. Presenting my poster, “Single-nucleus transcriptomics reveal cellular remodeling during salt stress in pennycress.”</figcaption>
+        </figure>
+        <figure>
+          <a href="photos/single_cell_workshop_2025.jpg" target="_blank" rel="noopener"><img src="photos/single_cell_workshop_2025.jpg" alt="Group photo of participants and organizers of the Summer Single Cell Workshop at Virginia Tech" loading="lazy"></a>
+          <figcaption><strong>Summer Single Cell Workshop</strong> · Virginia Tech, Blacksburg, VA · Summer 2025</figcaption>
+        </figure>
+        <figure>
+          <a href="photos/grc_2025_usm.jpg" target="_blank" rel="noopener"><img src="photos/grc_2025_usm.jpg" alt="Sanchari Kundu and a colleague at the University of Southern Maine sign during the 2025 Gordon Research Conference" loading="lazy"></a>
+          <figcaption><strong>Gordon Research Conference: Single-Cell Approaches in Plant Biology</strong> · University of Southern Maine, Portland, ME · August 2025</figcaption>
+        </figure>
+        <figure>
+          <a href="photos/cshl_plant_course_2024.jpg" target="_blank" rel="noopener"><img src="photos/cshl_plant_course_2024.jpg" alt="Group photo of the Frontiers and Techniques in Plant Science course by the harbor at Cold Spring Harbor Laboratory" loading="lazy"></a>
+          <figcaption><strong>Frontiers and Techniques in Plant Science</strong> · Cold Spring Harbor Laboratory, NY · Summer 2024</figcaption>
+        </figure>
+        <figure class="wide">
+          <a href="photos/grc_2025_group.jpg" target="_blank" rel="noopener"><img src="photos/grc_2025_group.jpg" alt="Group photo of attendees at the 2025 Gordon Research Conference on Single-Cell Approaches in Plant Biology" loading="lazy"></a>
+          <figcaption><strong>Gordon Research Conference: Single-Cell Approaches in Plant Biology</strong> · University of Southern Maine, Portland, ME · August 2025. I presented a talk and a poster on improving scRNA-seq quantification in plants through refined 3′ UTR annotation.</figcaption>
+        </figure>
+        <!--
+        <figure>
+          <a href="photos/example.jpg" target="_blank" rel="noopener"><img src="photos/example.jpg" alt="Short description" loading="lazy"></a>
+          <figcaption>Caption, e.g. Gordon Research Conference, 2025</figcaption>
+        </figure>
+        -->
+      </div>
+    </div>
+  </section>
+
   <footer>
-    <p>© 2026 Sanchari Kundu · <a href="mailto:sancharikundu@vt.edu">sancharikundu@vt.edu</a></p>
+    <p><a href="mailto:sancharikundu@vt.edu">sancharikundu@vt.edu</a></p>
+    <p><strong>School of Plant and Environmental Sciences, Virginia Tech</strong></p>
+    <p>Blacksburg, VA 24061</p>
+    <p>© 2026 Sanchari Kundu</p>
   </footer>
+
+  <script>
+    // Highlight the menu item for the section currently on screen
+    const links = [...document.querySelectorAll('.menu a')];
+    const byId = Object.fromEntries(links.map(a => [a.getAttribute('href').slice(1), a]));
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          links.forEach(a => a.removeAttribute('aria-current'));
+          byId[e.target.id]?.setAttribute('aria-current', 'true');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('#home, .page-section').forEach(s => io.observe(s));
+  </script>
 </body>
 </html>
