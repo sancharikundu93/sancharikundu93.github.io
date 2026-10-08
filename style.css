@@ -254,3 +254,4 @@ main h2 { border-bottom: 2px solid var(--tint); padding-bottom: 6px; }
 @media (max-width: 760px) {
   .cv-row { grid-template-columns: 1fr; gap: 2px; }
 }
+.timeline .t-place { display: block; }
