@@ -149,3 +149,7 @@ footer strong { color: var(--text); }
 /* Hide the "coming soon" note once the gallery has a photo in it */
 .gallery:has(figure) + .empty-note { display: none; }
 .empty-note { color: var(--muted); font-style: italic; text-align: center; }
+/* Wide figures (group photos) span the full row and keep their own shape */
+.gallery figure.wide { grid-column: 1 / -1; }
+.gallery figure.wide img { aspect-ratio: auto; }
+.gallery figure.wide a:hover img { transform: none; }
