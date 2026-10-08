@@ -280,3 +280,19 @@ html { scroll-behavior: smooth; }
 .page-section:nth-of-type(odd) .gallery figure { background: var(--bg); }
 #cv .cv-quote { margin-top: -8px; }
 #hero, #home { scroll-margin-top: 64px; }
+
+/* ---------- Prize medals in Honors & Awards ---------- */
+.cv-row.award { grid-template-columns: 150px 1fr 28px; align-items: center; }
+.medal { display: inline-flex; justify-self: end; }
+.medal svg { width: 20px; height: 26px; filter: drop-shadow(0 1px 1px rgba(0,0,0,.15)); }
+.medal .ribbon-l { fill: var(--primary); }
+.medal .ribbon-r { fill: var(--primary-light); }
+.medal text { font: 700 14px var(--sans); fill: rgba(0,0,0,.55); }
+.medal .rim { fill: none; stroke-width: 1.5; }
+.medal.gold   .disc { fill: #e6b422; } .medal.gold   .rim { stroke: #fff2b3; }
+.medal.silver .disc { fill: #b9c0c8; } .medal.silver .rim { stroke: #eef1f4; }
+.medal.bronze .disc { fill: #c27c3e; } .medal.bronze .rim { stroke: #f0c9a3; }
+@media (max-width: 760px) {
+  .cv-row.award { grid-template-columns: 1fr 28px; }
+  .cv-row.award .cv-when { grid-column: 1 / -1; }
+}
