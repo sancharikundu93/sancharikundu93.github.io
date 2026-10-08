@@ -135,6 +135,7 @@ footer strong { color: var(--text); }
 /* ---------- Photos page ---------- */
 .gallery {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px;
+  grid-auto-flow: dense;
 }
 .gallery figure {
   margin: 0; background: var(--tint); border-radius: 8px; overflow: hidden;
