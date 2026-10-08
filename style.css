@@ -1,0 +1,151 @@
+/* Shared styles for every page of the site */
+:root {
+  --primary: #1e5235;
+  --primary-dark: #123622;
+  --primary-light: #4f8a64;
+  --tint: #eaf3ec;
+  --text: #1c1c1c;
+  --muted: #5f5f6b;
+  --bg: #ffffff;
+  --border: #dbe6de;
+  --serif: "Roboto Serif", Georgia, serif;
+  --sans: "Roboto", system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.7 var(--sans);
+}
+a { color: var(--primary-dark); }
+a:hover { color: var(--primary); }
+i, em { font-style: italic; }
+
+/* ---------- Top bar ---------- */
+.topbar {
+  background: var(--primary);
+  color: #fff;
+  position: sticky; top: 0; z-index: 20;
+  box-shadow: 0 1px 4px rgba(0,0,0,.15);
+}
+.topbar .inner {
+  max-width: 1100px; margin: 0 auto; padding: 0 16px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  min-height: 64px; flex-wrap: wrap;
+}
+.site-name {
+  font-family: var(--serif); font-size: 22px; font-weight: 600;
+  color: #fff; text-decoration: none; padding: 12px 0;
+}
+.site-name:hover { color: #fff; }
+.menu { display: flex; flex-wrap: wrap; gap: 4px; list-style: none; margin: 0; padding: 0; }
+.menu a {
+  display: block; padding: 8px 12px; border-radius: 4px;
+  color: #fff; text-decoration: none; font-size: 15px; letter-spacing: .02em;
+}
+.menu a:hover { background: rgba(0,0,0,.15); color: #fff; }
+.menu a[aria-current="page"] { background: rgba(0,0,0,.15); font-weight: 500; }
+
+/* ---------- Page banner ---------- */
+.banner {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: #fff; text-align: center;
+  padding: 56px 16px;
+}
+.banner h1 {
+  margin: 0; font-family: var(--serif); font-weight: 600;
+  font-size: clamp(32px, 6vw, 48px); letter-spacing: .01em;
+}
+
+/* ---------- Content ---------- */
+main { max-width: 1000px; margin: 0 auto; padding: 48px 16px 72px; }
+h2 {
+  font-family: var(--serif); font-weight: 600; color: var(--primary-dark);
+  font-size: 26px; margin: 40px 0 16px;
+}
+h2:first-child { margin-top: 0; }
+h3 { font-family: var(--serif); font-weight: 600; font-size: 19px; margin: 24px 0 8px; }
+
+/* Biography layout: photo left, intro right */
+.bio-intro {
+  display: grid; grid-template-columns: 300px 1fr; gap: 48px; align-items: center;
+}
+.bio-intro img {
+  width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%;
+  border: 6px solid var(--tint);
+}
+.bio-name { font-family: var(--serif); font-size: 36px; font-weight: 600; margin: 0; line-height: 1.2; }
+.bio-title { font-size: 20px; color: var(--primary); margin: 6px 0 18px; font-weight: 500; }
+.tagline {
+  font-family: var(--serif); font-style: italic; font-size: 20px; line-height: 1.5;
+  color: var(--primary-dark); margin: 0;
+  border-left: 4px solid var(--primary-light); padding-left: 16px;
+}
+.statement {
+  background: var(--tint); border-radius: 8px;
+  padding: 24px 28px; margin: 40px 0 32px; font-size: 18px;
+}
+.bio-text p { margin: 0 0 18px; }
+
+/* Link pills */
+.social { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.social a {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 16px; border-radius: 999px;
+  background: var(--primary); color: #fff; text-decoration: none; font-size: 15px;
+}
+.social a:hover { background: var(--primary-dark); color: #fff; }
+.social svg { width: 18px; height: 18px; fill: currentColor; }
+
+/* Lists used on Publications / Talks / Teaching */
+ol.entries, ul.entries { padding-left: 24px; margin: 0; }
+.entries li { margin-bottom: 16px; }
+.venue { font-style: italic; }
+.note { color: var(--primary); font-size: 14px; font-weight: 500; }
+.year { color: var(--muted); font-variant-numeric: tabular-nums; }
+.entries .sub { display: block; color: var(--muted); font-size: 15px; }
+
+/* CV page */
+.cv-actions { margin-bottom: 20px; }
+.cv-frame {
+  width: 100%; height: 85vh; min-height: 500px;
+  border: 1px solid var(--border); border-radius: 8px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--tint); border-top: 1px solid var(--border);
+  text-align: center; color: var(--muted); font-size: 15px; padding: 32px 16px;
+}
+footer p { margin: 4px 0; }
+footer strong { color: var(--text); }
+
+/* ---------- Phone screens ---------- */
+@media (max-width: 760px) {
+  .bio-intro { grid-template-columns: 1fr; gap: 24px; text-align: center; }
+  .bio-intro img { max-width: 220px; margin: 0 auto; }
+  .tagline { border-left: 0; padding-left: 0; }
+  .social { justify-content: center; }
+  .statement { padding: 18px; }
+  .menu a { padding: 6px 8px; font-size: 14px; }
+}
+
+/* ---------- Photos page ---------- */
+.gallery {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px;
+}
+.gallery figure {
+  margin: 0; background: var(--tint); border-radius: 8px; overflow: hidden;
+  border: 1px solid var(--border);
+}
+.gallery img {
+  display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  transition: transform .25s ease;
+}
+.gallery a:hover img { transform: scale(1.03); }
+.gallery figcaption { padding: 10px 14px; font-size: 15px; color: var(--muted); }
+/* Hide the "coming soon" note once the gallery has a photo in it */
+.gallery:has(figure) + .empty-note { display: none; }
+.empty-note { color: var(--muted); font-style: italic; text-align: center; }
