@@ -296,3 +296,19 @@ html { scroll-behavior: smooth; }
   .cv-row.award { grid-template-columns: 1fr 28px; }
   .cv-row.award .cv-when { grid-column: 1 / -1; }
 }
+
+/* ---------- Publications: featured figure next to a paper ---------- */
+.fig-card {
+  display: grid; grid-template-columns: 1fr 280px; gap: 24px; align-items: start;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px 16px 16px 18px;
+}
+.pub-fig {
+  display: block; border-radius: 6px; overflow: hidden; background: #fff;
+  border: 1px solid var(--border); transition: box-shadow .2s ease, transform .2s ease;
+}
+.pub-fig:hover { box-shadow: 0 6px 18px rgba(10,36,69,.18); transform: translateY(-2px); }
+.pub-fig img { display: block; width: 100%; height: auto; }
+.fig-caption { display: block; margin-top: 10px; font-size: 14px; color: var(--muted); line-height: 1.5; }
+@media (max-width: 760px) {
+  .fig-card { grid-template-columns: 1fr; }
+}
